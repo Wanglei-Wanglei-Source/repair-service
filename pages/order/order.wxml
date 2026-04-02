@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="form-card">
+    <!-- 服务类型（改为可选择） -->
+    <view class="form-item">
+      <view class="label">服务类型</view>
+      <picker mode="selector" range="{{serviceList}}" bindchange="onServiceChange">
+        <view class="picker">{{service || '请选择服务'}}</view>
+      </picker>
+    </view>
+
+    <!-- 设备型号 -->
+    <view class="form-item">
+      <view class="label">设备型号</view>
+      <input class="input" placeholder="请输入设备型号（如：iPhone 14）" 
+             bindinput="onModelInput" value="{{model}}"/>
+    </view>
+
+    <!-- 问题描述 -->
+    <view class="form-item">
+      <view class="label">问题描述</view>
+      <textarea class="textarea" placeholder="请描述设备故障情况" 
+                bindinput="onDescInput" value="{{desc}}"></textarea>
+    </view>
+
+    <!-- 预约时间 -->
+    <view class="form-item">
+      <view class="label">预约时间</view>
+      <picker mode="date" bindchange="onDateChange">
+        <view class="picker">{{date || '请选择日期'}}</view>
+      </picker>
+    </view>
+
+    <!-- 联系人 -->
+    <view class="form-item">
+      <view class="label">联系人</view>
+      <input class="input" placeholder="请输入姓名" 
+             bindinput="onNameInput" value="{{name}}"/>
+    </view>
+
+    <!-- 联系电话 -->
+    <view class="form-item">
+      <view class="label">联系电话</view>
+      <input class="input" type="number" placeholder="请输入手机号" 
+             bindinput="onPhoneInput" value="{{phone}}"/>
+    </view>
+
+    <!-- 提交按钮 -->
+    <button class="submit-btn" bindtap="submitOrder">提交预约</button>
+  </view>
+</view>

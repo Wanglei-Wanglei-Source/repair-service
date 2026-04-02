@@ -1,0 +1,83 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper class="banner" indicator-dots autoplay circular>
+    <swiper-item>
+      <image class="banner-img" src="https://picsum.photos/750/300?random=1"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-img" src="https://picsum.photos/750/300?random=2"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-img" src="https://picsum.photos/750/300?random=3"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 服务分类 -->
+  <view class="section">
+    <view class="section-title">服务类型</view>
+    <view class="service-grid">
+      <view class="service-item" bindtap="selectService" data-service="手机维修">
+        <text class="icon">📱</text>
+        <text class="name">手机维修</text>
+      </view>
+      <view class="service-item" bindtap="selectService" data-service="电脑维修">
+        <text class="icon">💻</text>
+        <text class="name">电脑维修</text>
+      </view>
+      <view class="service-item" bindtap="selectService" data-service="平板维修">
+        <text class="icon">📟</text>
+        <text class="name">平板维修</text>
+      </view>
+      <view class="service-item" bindtap="selectService" data-service="其他设备">
+        <text class="icon">🎧</text>
+        <text class="name">其他设备</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门服务 -->
+  <view class="section">
+    <view class="section-title">热门服务</view>
+    <view class="hot-list">
+      <view class="hot-item" bindtap="selectService" data-service="屏幕更换">
+        <text>🔧 屏幕更换</text>
+        <text class="price">￥99起</text>
+      </view>
+      <view class="hot-item" bindtap="selectService" data-service="电池更换">
+        <text>🔋 电池更换</text>
+        <text class="price">￥79起</text>
+      </view>
+      <view class="hot-item" bindtap="selectService" data-service="系统重装">
+        <text>💿 系统重装</text>
+        <text class="price">￥50起</text>
+      </view>
+      <view class="hot-item" bindtap="selectService" data-service="清灰保养">
+        <text>🧹 清灰保养</text>
+        <text class="price">￥39起</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 服务优势 -->
+  <view class="section">
+    <view class="section-title">服务优势</view>
+    <view class="advantage-list">
+      <view class="advantage-item">
+        <text class="advantage-icon">✅</text>
+        <text>专业工程师</text>
+      </view>
+      <view class="advantage-item">
+        <text class="advantage-icon">🚀</text>
+        <text>快速响应</text>
+      </view>
+      <view class="advantage-item">
+        <text class="advantage-icon">💰</text>
+        <text>价格透明</text>
+      </view>
+      <view class="advantage-item">
+        <text class="advantage-icon">🔧</text>
+        <text>原厂配件</text>
+      </view>
+    </view>
+  </view>
+</view>

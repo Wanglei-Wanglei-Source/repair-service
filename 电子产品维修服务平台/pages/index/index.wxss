@@ -1,0 +1,95 @@
+.container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 30rpx;
+}
+
+/* 轮播图 */
+.banner {
+  width: 100%;
+  height: 300rpx;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 公共区域 */
+.section {
+  background: white;
+  margin-top: 20rpx;
+  padding: 30rpx;
+}
+
+.section-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+
+/* 服务网格 */
+.service-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-item {
+  text-align: center;
+  flex: 1;
+}
+
+.service-item .icon {
+  font-size: 60rpx;
+  display: block;
+}
+
+.service-item .name {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 15rpx;
+  display: block;
+}
+
+/* 热门服务 */
+.hot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+
+.hot-item {
+  width: calc(50% - 10rpx);
+  background: #f8f9fa;
+  padding: 25rpx;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.hot-item .price {
+  color: #F44336;
+  font-weight: bold;
+}
+
+/* 服务优势 */
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  text-align: center;
+  flex: 1;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.advantage-icon {
+  font-size: 40rpx;
+  display: block;
+  margin-bottom: 10rpx;
+}
